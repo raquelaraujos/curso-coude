@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição para Workshop</title>
+</head>
+<body>
+    <form action="form.php" method="post" autocomplete= "on">
+        <fieldset>
+            <legend>Formulário de Inscrição para Workshop</legend><br>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"
+                placeholder="Ex: Maria Santos"
+                required
+                maxlength="100"><br><br>
+
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail"
+            placeholder="Ex: mariasantos@gmail.com"
+            required
+            maxlength="100"><br><br>
+
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel"
+            placeholder="Ex: (xx)9xxxx-xxxx"
+            pattern="[0-9]{11}"><br><br>
+
+            <label for="inasc">Data de nascimento:</label>
+            <input type="date" name="nasc" id="inasc"
+            min="1900-01-01"
+            max="2023-12-01"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <input type="radio" name="area" id="ifront" value="frontend">
+            <label for="ifront">Frontend</label><br><br>
+
+            <input type="radio" name="area" id="iback" value="backend">
+            <label for="iback">Backend</label><br><br>
+
+            <input type="radio" name="area" id="ifull" value="fullstack">
+            <label for="ifull">Full Stack</label><br><br>
+        </fieldset> 
+
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <label for="icon">Nível de conhecimento:</label>
+            <select name="conhecimento" id="icon">
+
+                <option value="seleção">--- Selecione seu nível de conhecimento na área selecionada ---</option>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediário">Intermediário</option>
+                <option value="avançado">Avançado</option>
+            </select><br><br>
+        
+            <label for="iprof">Qual sua profissão atual?</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+
+            <datalist id="listprof">
+                <option>Estudante</option>
+                <option>Programador</option>
+                <option>Desempregado</option>
+            </datalist><br><br>
+
+            <label for="icom">Gostaria de registrar algum comentário?</label><br>
+            <textarea name="com" id="icom" cols="50" rows="3"></textarea>
+        </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
