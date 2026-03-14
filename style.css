@@ -1,0 +1,29 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.fundo{
+    border: 5px solid black;
+    padding: 20px 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    height: 550px;
+    width: 80%;
+    margin: auto;
+}
+.titulo{
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px 15px; 
+    border-radius: 10px;
+}
+.texto{
+    font-size: 105%;
+}
