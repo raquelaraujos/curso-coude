@@ -1,0 +1,30 @@
+body h1{
+    text-align: center;
+}
+
+.card {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    width: 30%;
+    height: 50%;
+
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(184, 233, 235);
+    border: 10px solid rgb(42, 37, 80);
+
+    outline-width: 2px;
+    outline-style: dashed;
+    outline-color: black;
+
+}
+
+.painel {
+   
+}
+
+.painel p {
+
+}
